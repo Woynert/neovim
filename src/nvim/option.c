@@ -3939,6 +3939,8 @@ static char *get_varp_from(vimoption_T *p, buf_T *buf, win_T *win)
     return (char *)&(win->w_p_wfh);
   case PV_WFW:
     return (char *)&(win->w_p_wfw);
+  case PV_WVW:
+    return (char *)&(win->w_p_wvw);
   case PV_PVW:
     return (char *)&(win->w_p_pvw);
   case PV_RL:

@@ -184,6 +184,8 @@ typedef struct {
 #define w_p_wfh w_onebuf_opt.wo_wfh    // 'winfixheight'
   int wo_wfw;
 #define w_p_wfw w_onebuf_opt.wo_wfw    // 'winfixwidth'
+  int wo_wvw;
+#define w_p_wvw w_onebuf_opt.wo_wvw    // 'winvirtualwidth'
   int wo_pvw;
 #define w_p_pvw w_onebuf_opt.wo_pvw    // 'previewwindow'
   int wo_rl;

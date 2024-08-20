@@ -960,6 +960,7 @@ enum {
   WV_STL,
   WV_WFH,
   WV_WFW,
+  WV_WVW,
   WV_WRAP,
   WV_SCL,
   WV_WINHL,
