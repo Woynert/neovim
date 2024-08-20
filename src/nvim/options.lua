@@ -2829,6 +2829,13 @@ return {
       defaults={if_true=false}
     },
     {
+      full_name='winvirtualwidth', abbreviation='wvw',
+      short_desc=N_("Window virtual width"),
+      type='number', scope={'window'},
+      redraw={'current_window'},
+      defaults={if_true=0}
+    },
+    {
       full_name='winminheight', abbreviation='wmh',
       short_desc=N_("minimum number of lines for any window"),
       type='number', scope={'global'},
