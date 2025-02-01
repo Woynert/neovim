@@ -6712,6 +6712,10 @@ void win_set_inner_size(win_T *wp, bool valid_cursor)
     width = wp->w_width;
   }
 
+  if (wp->w_p_wvw > 0 && wp->w_p_wvw < width) {
+    width = wp->w_p_wvw;
+  }
+
   int prev_height = wp->w_height_inner;
   int height = wp->w_height_request;
   if (height == 0) {

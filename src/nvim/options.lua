@@ -9936,6 +9936,17 @@ return {
       type = 'string',
     },
     {
+      abbreviation = 'wvw',
+      defaults = { if_true = 0 },
+      desc = [=[]=],
+      full_name = 'winvirtualwidth', 
+      scope = { 'window' },
+      short_desc = N_("Window virtual width"),
+      type = 'number', 
+      redraw = { 'current_window' },
+      varname = 'p_wvw',
+    },
+    {
       abbreviation = 'wmh',
       cb = 'did_set_winminheight',
       defaults = { if_true = 1 },

@@ -2898,6 +2898,10 @@ static const char *validate_num_option(OptIndex opt_idx, void *varp, OptInt *new
     } else if (value > p_wiw) {
       return e_winwidth;
     }
+  } else if (varp == &p_wvw) {
+    if (value < 0) {
+      return e_positive;
+    }
   } else if (varp == &p_titlelen) {
     if (value < 0) {
       return e_positive;
@@ -4733,6 +4737,8 @@ void *get_varp_from(vimoption_T *p, buf_T *buf, win_T *win)
     return &(win->w_p_wfh);
   case PV_WFW:
     return &(win->w_p_wfw);
+  case PV_WVW:
+    return &(win->w_p_wvw);
   case PV_PVW:
     return &(win->w_p_pvw);
   case PV_RL:
